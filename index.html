@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>TicTacToe</title>
+</head>
+<body class="body">
+    
+    <div class="tictactoe-banner">
+        TIC <br>
+        TAC <br>
+        TOE
+    </div>
+    
+    <div class="help">
+        <div class="help-button-bottom"></div>
+        <button class="help-button" onclick="togglePopup()">?</button>
+    </div>
+    
+    <div class="table">
+        <button id="box1" class="box" onclick="demo(this,0)"></button>
+        <button id="box2" class="box" onclick="demo(this,1)"></button>
+        <button id="box3" class="box" onclick="demo(this,2)"></button>
+        <button id="box4" class="box" onclick="demo(this,3)"></button>
+        <button id="box5" class="box" onclick="demo(this,4)"></button>
+        <button id="box6" class="box" onclick="demo(this,5)"></button>
+        <button id="box7" class="box" onclick="demo(this,6)"></button>
+        <button id="box8" class="box" onclick="demo(this,7)"></button>
+        <button id="box9" class="box" onclick="demo(this,8)"></button>
+    </div>
+    
+    <div class="how-to-play" id="popup"> 
+        <span class="how-to-play-title">HOW TO PLAY</span> <br>
+        TIC-TAC-TOE IS A LIGHT-HEARTED GAME ON A 3x3 GRID WHERE PLAYERS AIM TO ALIGN THEIR
+        "X" OR "O" SYMBOLS IN A ROW, COLUMN, OR DIAGONAL TO WIN. IT'S QUICK, ENGAGING, AND PERFECT FOR CASUAL ENTERTAINMENT.
+    </div>
+    
+    <div class="game-status">
+        <div id="result" class="game-result"></div>
+        
+        <div class="new-game">
+            <div class="new-game-bottom"></div>
+            <button class="new-game-btn" onclick="resetGame()">NEW GAME</button>
+        </div>
+        
+        <div class="reset">
+            <div class="reset-button-bottom"></div>
+            <button class="reset-btn" onclick="newGame()">RESET SCORE</button>
+        </div>
+        
+        <span class="p1-score">0</span>
+        <p class="player-one">P1</p>
+        <span class="p2-score">0</span>
+        <p class="player-two">P2</p>
+        
+        <div class="game-mode">
+            <div class="mode-button-bottom"></div>
+            <button class="mode-button" onclick="gameMode(this)">2P</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

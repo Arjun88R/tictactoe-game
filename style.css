@@ -1,0 +1,332 @@
+.body{
+    margin:0;
+    background-color: #FFF5E0;
+}
+
+.tictactoe-banner{
+    position:fixed;
+    text-align: center;
+    left:100px;
+    padding-top:20px;
+    font-size:70px;
+    background-color:#050517;
+    color:#fff;
+    height:600px;
+    width:210px;
+    opacity: 0.7;
+    font-family: 'Press Start 2P', 'cursive';
+}
+
+.help{
+    position:absolute;
+    top:20px;
+    right:70px;
+}
+
+.help-button{
+    position:absolute;
+    background-color:#CF5C36;
+    color:#fff;
+    border:#000;
+    border-style:solid;
+    text-align: center;
+    font-family:'Press Start 2P', 'cursive';
+    border-radius: 10px;
+    padding-right:1px;
+    width:45px;
+    height:50px;
+    font-size: 30px;
+    transition: background-color 0.1s, margin-top 0.1s;
+    z-index:1;
+    margin-top: 10px;
+}
+
+.help-button-bottom{
+    position:absolute;
+    background-color: #8e4228;
+    border:#000;
+    border-style:solid;
+    width:41px;
+    height:45px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.help-button:hover{
+    background-color:#a94c2c;
+}
+
+.help-button:active{
+    margin-top: 15px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 400px;
+    width: 400px;
+    gap: 25px;
+    position: fixed;
+    left:35%;
+    padding-top: 100px;;
+    z-index:1;
+}
+
+.box {
+    background-color:#494949;
+    color:#fff;
+    font-family:'Press Start 2P', 'cursive';
+    font-size:60px;
+    padding-left:14px;
+    padding-top:12px;
+    border:none;
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition:0.1s all ease;
+}
+
+.box:hover{
+    background-color:#5a5a5a;
+}
+
+.box:active{
+    background-color:#636363;
+}
+
+.box:disabled{
+    background-color:#494949;
+    color:#9b9a9a;
+}
+    
+.how-to-play{
+    position:absolute;
+    display:none;
+    font-family:'Press Start 2P', 'cursive';
+    font-size:10px;
+    line-height: 20px;
+    top:100px;
+    right:34px;
+    background-color:#CF5C36;
+    color:#fff;
+    border:#000;
+    width:250px;
+    height:300px;
+    padding:10px;
+    border-radius: 10px;
+    z-index:1;
+}
+
+.hidden {
+    display: block;
+}
+
+.how-to-play-title{
+    font-family:'Press Start 2P', 'cursive';
+    font-size:15px;
+    margin-left:45px;
+}
+
+.game-result{
+    position:absolute;
+    text-align: center;
+    top:0px;
+    right: 100px;
+    padding-left:7px;
+    padding-top: 20px;
+    font-size:50px;
+    background-color:#050517;
+    color:#fff;
+    height:600px;
+    width:210px;
+    opacity: 0.7;
+    font-family: 'Press Start 2P', 'cursive';
+}
+
+.new-game{
+    position:absolute;
+    top:470px;
+    right:278px;
+    z-index:1;
+}
+
+.new-game-btn{
+    position:absolute;
+    background-color:#CF5C36;
+    color:#fff;
+    border:#000;
+    border-style:solid;
+    text-align: center;
+    font-family:'Press Start 2P', 'cursive';
+    border-radius: 10px;
+    padding-right:1px;
+    width:142px;
+    height:50px;
+    font-size: 20px;
+    transition: background-color 0.1s, margin-top 0.1s;
+    z-index:1;
+    margin-top: 10px;
+}
+
+.new-game-bottom{
+    position:absolute;
+    background-color:#CF5C36;
+    border:#000;
+    border-style:solid;
+    width:138px;
+    height:45px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.new-game-btn:hover{
+    background-color:#CF5C36;
+}
+
+.new-game-btn:active{
+    margin-top: 15px;
+}
+
+
+.reset{
+    position:absolute;
+    top:368px;
+    right:255px;
+    z-index:1;
+}
+
+.reset-btn{
+    position:absolute;
+    background-color:#CF5C36;
+    color:#fff;
+    border:#000;
+    border-style:solid;
+    text-align: center;
+    font-family:'Press Start 2P', 'cursive';
+    border-radius: 10px;
+    line-height: 20px;
+    padding-right:1px;
+    width:90px;
+    height:80px;
+    font-size: 15px;
+    transition: background-color 0.1s, margin-top 0.1s;
+    z-index:1;
+    margin-top: 10px;
+}
+
+.reset-button-bottom{
+    position:absolute;
+    background-color:#CF5C36;
+    border:#000;
+    border-style:solid;
+    width:86px;
+    height:75px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.reset-btn:hover{
+    background-color:#CF5C36;
+}
+
+.reset-btn:active{
+    margin-top: 15px;
+}
+
+
+.p1-score{
+    position:absolute;
+    text-align: center;
+    right:220px;
+    top:200px;
+    height:35px;
+    width:70px;
+    background-color:#efc88b;
+    color:#000;
+    font-family: 'Press Start 2P', 'cursive';
+    padding-top:20px;
+    font-size:20px;
+    border-radius:10px;
+    z-index:1;
+}
+
+.p2-score{
+    position:absolute;
+    text-align:center;
+    right:125px;
+    top:200px;
+    height:35px;
+    width:70px;
+    background-color:#efc88b;
+    color:#000;
+    font-family: 'Press Start 2P', 'cursive';
+    padding-top:20px;
+    font-size:20px;
+    border-radius:10px;
+}
+
+.player-one{
+    position:absolute;
+    color:#fff;
+    right:237px;
+    top:260px;
+    font-family: 'Press Start 2P','cursive';
+}
+
+.player-two{
+    position:absolute;
+    color:#fff;
+    right:141px;
+    top:260px;
+    font-family: 'Press Start 2P','cursive';
+}
+
+.game-mode{
+    position:absolute;
+    top:300px;
+    right:232px;
+    z-index:1;
+}
+
+.mode-button{
+    position:absolute;
+    background-color:#CF5C36;
+    color:#fff;
+    border:#000;
+    border-style:solid;
+    text-align: center;
+    font-family:'Press Start 2P', 'cursive';
+    border-radius: 10px;
+    width:50px;
+    height:50px;
+    font-size:19px;
+    padding-bottom: 4px;
+    transition: background-color 0.1s, margin-top 0.1s;
+    z-index:1;
+    margin-top: 10px;
+}
+
+.mode-button i{
+    font-size:23px;
+}
+
+.mode-button-bottom{
+    position:absolute;
+    background-color:#CF5C36;
+    border:#000;
+    border-style:solid;
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.mode-button:hover{
+    background-color:#CF5C36;
+    
+}
+
+.mode-button:active{
+    margin-top: 15px;
+}
